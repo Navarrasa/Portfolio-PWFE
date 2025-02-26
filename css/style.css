@@ -13,6 +13,7 @@ body{
     font-family: 'Poppins', sans-serif;
     width: 100%;
     height: 100vh;
+    background-color: var(--bg-color-2);
 }
 
 :root{
@@ -20,10 +21,10 @@ body{
 /* Paleta de Cores */
     --bdr-color: #FFF;
     --fnt-color: #FFF;
-    --fnt-hover: #FFF;
+    --fnt-hover: #afabab;
     --bg-color: #000;
     --bg-color-2: #333;
-    --bg-color-3: #666;
+    --bg-color-3: #4b4848;
     --btn-color: #FFF;
     --btn-hover: #FFF;
     --btn-bg: #000;
