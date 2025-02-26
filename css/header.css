@@ -25,7 +25,7 @@ header{
         border: 1px solid var(--bdr-color);
         background-color: var(--bg-color);
         border-radius: 20px;
-        padding: 10px;
+        padding: 5px;
         position: relative;
         opacity: .8;
         gap: 20px;
