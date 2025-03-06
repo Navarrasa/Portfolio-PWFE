@@ -6,22 +6,24 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: var(--fnt-color);
 }
 
 body{
     font-family: 'Poppins', sans-serif;
     width: 100%;
     min-height: 100vh;
-    background-color: var(--bg-color-2);
+    background-color: var(--bg-brown);
 }
 
 :root{
 
 /* Paleta de Cores */
+    --bg-brown: rgb(53, 31, 31);
     --bdr-color: #FFF;
     --fnt-color: #FFF;
     --fnt-hover: #afabab;
-    --bg-color: #000;
+    --bg-color: #00000062;
     --bg-color-2: #333;
     --bg-color-3: #4b4848;
     --btn-color: #FFF;

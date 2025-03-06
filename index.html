@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <title>Portfólio Senai</title>
 </head>
 <body>
@@ -20,7 +21,7 @@
                         <li><a href="https://navarrasa.github.io/Portfolio/"><i class='bx bxl-github' ></i></a></li>
                     </div>
                 <div>
-                    <li><a href="index.html"><i class='bx bx-moon' ></i></a></li>
+                    <li><i class='bx bx-moon' ></i></li>
                 </div>
             </ul>
         </nav>
@@ -28,20 +29,257 @@
     <main>  
         <section>
             <div class="background-video">
-                <video src="https://github.com/Navarrasa/Ferramentas/raw/refs/heads/main/videos/video-background.mp4" autoplay loop muted></video>
+                <video autoplay loop muted>
+                    <source src="https://github.com/Navarrasa/Ferramentas/raw/refs/heads/main/videos/video-background.mp4" type="video/mp4">
+                </video>
             </div>
             <div class="content">
-                <h1>Portfólio Senai: Uma Jornada de Aprendizado em JavaScript</h1>
-
-                <p>O Portfólio Senai é um site criado com o objetivo de exibir o aprendizado e os projetos desenvolvidos ao longo das aulas de JavaScript. Nele, cada estudante tem a oportunidade de mostrar suas habilidades e a evolução em uma das linguagens de programação mais poderosas da web.</p>
-                
-                <p>Através deste portfólio, podemos explorar os desafios e as conquistas de quem está começando a entender como o JavaScript transforma a experiência online, permitindo a interação, dinamismo e funcionalidades que tornam os sites modernos tão interessantes. O site é a prova de dedicação e esforço, refletindo o compromisso dos alunos com seu desenvolvimento profissional.</p>
-                
-                <p>Ao navegar pelo Portfólio Senai, você encontrará uma variedade de projetos, desde funções simples até aplicações mais complexas, tudo construído com base em conceitos como manipulação do DOM, eventos, arrays, objetos e muito mais. Cada projeto conta uma história única de aprendizado, desafios superados e o prazer de criar algo do zero com o poder do código.</p>
-                
-                <p>Este portfólio não é apenas um repositório de tarefas, mas um reflexo da paixão por aprender e crescer. Com ele, os estudantes do Senai demonstram não só seu conhecimento técnico, mas também sua criatividade e capacidade de inovar no mundo digital.</p>
+                <!-- Mensagem introdutória -->
+                <div>
+                    <h1 style="text-align: center;">Portfólio Senai: Uma Jornada de Aprendizado em JavaScript</h1>
+                    <p>
+                        O Portfólio Senai é um site criado com o objetivo de exibir o aprendizado e os projetos desenvolvidos ao longo das aulas de JavaScript. Nele, cada estudante tem a oportunidade de mostrar suas habilidades e a evolução em uma das linguagens de programação mais poderosas da web.
+                    </p>
+                    <p>
+                        Através deste portfólio, podemos explorar os desafios e as conquistas de quem está começando a entender como o JavaScript transforma a experiência online, permitindo a interação, dinamismo e funcionalidades que tornam os sites modernos tão interessantes. O site é a prova de dedicação e esforço, refletindo o compromisso dos alunos com seu desenvolvimento profissional.
+                    </p>
+                    <p>
+                        Ao navegar pelo Portfólio Senai, você encontrará uma variedade de projetos, desde funções simples até aplicações mais complexas, tudo construído com base em conceitos como manipulação do DOM, eventos, arrays, objetos e muito mais. Cada projeto conta uma história única de aprendizado, desafios superados e o prazer de criar algo do zero com o poder do código.
+                    </p>
+                    <p>
+                        Este portfólio não é apenas um repositório de tarefas, mas um reflexo da paixão por aprender e crescer. Com ele, os estudantes do Senai demonstram não só seu conhecimento técnico, mas também sua criatividade e capacidade de inovar no mundo digital.
+                    </p>
+                </div>
             </div>
+            
+            <div class="container">
+                <div>
+                    <h2>Venha conhecer os exercícios!</h2>
+                </div>
+            </div>
+            <!-- Slider de exercícios -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                <!-- Slide 1 -->
+                  <div class="swiper-slide">
+                    <a href="#">
+                        <div>
+                            <h2>Exercício 1</h2>
+                        </div>
+                        <div>
+                            <p>
+                                Descrição Resumida:
+                            </p>
+                            <p>
+                                Calcule a diferença entre 2 números.
+                            </p>
+                        </div>
+                    </a>
+                  </div>
+                <!-- Slide 2 -->
+                  <div class="swiper-slide">
+                    <a href="#">
+                        <div>
+                            <h2>Exercício 2</h2>
+                        </div>
+                        <div>
+                            <p>
+                                Descrição Resumida:
+                            </p>
+                            <p>
+                                Verifique se um numero é par.
+                            </p>
+                        </div>
+                    </a>
+                  </div>
+                <!-- Slide 3 -->
+                  <div class="swiper-slide">
+                    <a href="#">
+                        <div>
+                            <h2>Exercício 3</h2>
+                        </div>
+                        <div>
+                            <p>
+                                Descrição Resumida:
+                            </p>
+                            <p>
+                                Solicite 2 notas, e veja se o 1 é múltiplo do segundo.
+                            </p>
+                        </div>
+                    </a>
+                  </div>
+                <!-- Slide 4 -->
+                  <div class="swiper-slide">
+                    <a href="#">
+                        <div>
+                            <h2>Exercício 4</h2>
+                        </div>
+                        <div>
+                            <p>
+                                Descrição Resumida:
+                            </p>
+                            <p>
+                                Converta uma temperatura em celsius para Fahrenheit
+                            </p>
+                        </div>
+                    </a>
+                  </div>
+                <!-- Slide 5 -->
+                  <div class="swiper-slide">
+                    <a href="#">
+                        <div>
+                            <h2>Exercício 5</h2>
+                        </div>
+                        <div>
+                            <p>
+                                Descrição Resumida:
+                            </p>
+                            <p>
+                                Calcule a área (base * altura).
+                            </p>
+                        </div>
+                    </a>
+                  </div>
+                <!-- Slide 6 -->
+                  <div class="swiper-slide">
+                    <a href="#">
+                        <div>
+                            <h2>Exercício 6</h2>
+                        </div>
+                        <div>
+                            <p>
+                                Descrição Resumida: 
+                            </p>
+                            <p>
+                                Verifique se a pessoa está acima da média, solicitando duas notas.
+                            </p>
+                        </div>
+                    </a>
+                  </div>
+                <!-- Slide 7 -->
+                  <div class="swiper-slide">
+                    <a href="#">
+                        <div>
+                            <h2>Exercício 7</h2>
+                        </div>
+                        <div>
+                            <p>
+                                Descrição Resumida:
+                            </p>
+                            <p>
+                                Calcule o IMC de uma pessoa. 
+                            </p>
+                        </div>
+                    </a>
+                  </div>
+                <!-- Slide 8 -->
+                  <div class="swiper-slide">
+                    <a href="#">
+                        <div>
+                            <h2>Exercício 8</h2>
+                        </div>
+                        <div>
+                            <p>
+                                Descrição Resumida:
+                            </p>
+                            <p>
+                                Verifique se um ano é bissexto. 
+                            </p>
+                        </div>
+                    </a>
+                  </div>
+                <!-- Slide 9 -->
+                  <div class="swiper-slide">
+                    <a href="#">
+                        <div>
+                            <h2>Exercício 9</h2>
+                        </div>
+                        <div>
+                            <p>
+                                Descrição Resumida:
+                            </p>
+                            <p>
+                                Solicite ao usuário uma taxa de câmbio, e um valor desejado, exiba o valor convertido. 
+                            </p>
+                        </div>
+                    </a>
+                  </div>
+                <!-- Slide 10 -->
+                  <div class="swiper-slide">
+                    <a href="#">
+                        <div>
+                            <h2>Exercício 10</h2>
+                        </div>
+                        <div>
+                            <p>
+                                Descrição Resumida:
+                            </p>
+                            <p>
+                                Pedir um número ao usuário de 1 a 9, e imprima a tabuada desse valor.
+                            </p>
+                        </div>
+                    </a>
+                  </div>
+                <!-- Slide 11 -->
+                  <div class="swiper-slide">
+                    <a href="#">
+                        <div>
+                            <h2>Exercício 11</h2>
+                        </div>
+                        <div>
+                            <p>
+                                Descrição Resumida:
+                            </p>
+                            <p>
+                                Neste exercício, você vai simular um jogo de "Pedra, papel e tesoura" contra o computador.  
+                            </p>
+                        </div>
+                    </a>
+                  </div>
+                <!-- Slide 12 -->
+                <div class="swiper-slide">
+                    <a href="#">
+                        <div>
+                            <h2>Exercício 12</h2>
+                        </div>
+                        <div>
+                            <p>
+                                Descrição Resumida:
+                            </p>
+                            <p>
+                                Calcule o fatorial de um número.  
+                            </p>
+                        </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
         </section>
     </main>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script defer>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 2.3, // valor padrão
+          centeredSlides: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          breakpoints: {
+            640: {
+              slidesPerView: 6,
+              
+            },
+            // Para telas com largura mínima de 1024px
+            1024: {
+              slidesPerView: 10,
+            //   spaceBetween: 30, --> largura entre cards
+            },
+          }
+        });
+      </script>
+      
 </body>
 </html>
