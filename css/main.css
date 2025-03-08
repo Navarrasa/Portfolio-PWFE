@@ -1,3 +1,4 @@
+/* Telas Pequenas -- Celulares */
 main{
     display: flex;
     flex-direction: column;
@@ -16,7 +17,7 @@ section{
 
     & .background-video{
         width: 100%;
-        height: 100%;
+        height: 100vh;
         position: absolute; 
 
     & video{
@@ -25,7 +26,7 @@ section{
         object-fit: cover;
         object-position: center;
         }
-    }
+    }   
 }
 
 h1{
@@ -45,8 +46,6 @@ h2{
     justify-content: center;
     padding: 1rem;
     width: 100%;
-    height: 400px;
-    overflow: scroll;
 
     & div{
         display: flex;
@@ -54,7 +53,7 @@ h2{
         align-items: center;
         justify-content: center;
         z-index: 100;
-        margin-top: 700px;
+        margin-top: 100px;
         gap: 1rem;
         background-color: var(--bg-color);
         backdrop-filter: blur(5px);
@@ -150,4 +149,245 @@ h2{
 }
 .swiper-pagination{
     backdrop-filter: blur(10px);
+}
+/* Telas Médias -- Tablets */
+@media (min-width: 640px) and (max-width: 1023px){
+    
+    h1{
+        font-size: 26px;
+    }
+    p{
+        font-size: 16px;
+        line-height: 24px;
+    }
+    h2{
+        font-size: 22px;
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 3rem;
+        width: 100%;
+    
+        & div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 100;
+            margin-top: 100px;
+            gap: 1.5rem;
+            background-color: var(--bg-color);
+            backdrop-filter: blur(5px);
+            border-radius: 30px;
+            padding: 40px;
+        }
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 3rem;
+        width: 100%;
+        height: auto;
+        gap: 1rem;
+    
+        & div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 100;
+            gap: 1rem;
+            background-color: var(--bg-color);  
+            backdrop-filter: blur(5px);
+            border-radius: 20px;
+            text-align: center;
+            padding: 20px;
+        }
+    }
+    
+    .swiper{
+        display: flex;
+        width: 100% !important;
+        overflow-x: hidden;
+        height: 300px;
+        justify-content: center;
+        align-items: center;
+    
+    
+        & .swiper-wrapper{
+        display: flex;
+        gap: 1rem;
+        width: 100% !important;
+        align-items: center;
+    
+        & .swiper-slide{
+            display: flex;
+            flex-direction: column;
+            background-color: var(--bg-color-3);
+            width: 200px !important;
+            height: 200px !important;
+            border-radius: 20px;
+            transition: all .35s;
+            
+            & :hover{
+                transition: .5s;
+                background-color: var(--bg-color);
+                transform: scale(1.2);
+                border-radius: 20px;
+            }
+    
+            & a{
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                height: 200px;
+                width: 200px;
+                padding: 15px;
+                justify-content: space-between;
+                align-items: center;
+                text-decoration: none;
+    
+                    &::-webkit-scrollbar{
+                        display: none;
+                    }
+    
+                    & div{
+                        pointer-events: none;
+                    }
+                    & h2{
+                        font-size: 20px;
+                    }
+                    & p{
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Telas Grandes -- Notebooks, desktops */
+@media (min-width: 1024px){
+    
+    h1{
+        font-size: 28px;
+    }
+    p{
+        font-size: 20px;
+        line-height: 26px;
+    }
+    h2{
+        font-size: 24px;
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 3rem;
+        width: 100%;
+    
+        & div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 100;
+            margin-top: 100px;
+            gap: 1.5rem;
+            background-color: var(--bg-color);
+            backdrop-filter: blur(10px);
+            border-radius: 30px;
+            padding: 3rem;
+        }
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+        width: 100%;
+        height: auto;
+        gap: 1rem;
+    
+        & div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 100;
+            gap: 1rem;
+            background-color: var(--bg-color);  
+            backdrop-filter: blur(5px);
+            border-radius: 20px;
+            text-align: center;
+            padding: 20px;
+        }
+    }
+    
+    .swiper{
+        display: flex;
+        width: 100% !important;
+        overflow-x: hidden;
+        height: 300px;
+        justify-content: center;
+        align-items: center;
+    
+    
+        & .swiper-wrapper{
+        display: flex;
+        gap: 1rem;
+        width: 100% !important;
+        align-items: center;
+    
+        & .swiper-slide{
+            display: flex;
+            flex-direction: column;
+            background-color: var(--bg-color-3);
+            width: 200px !important;
+            height: 200px !important;
+            border-radius: 20px;
+            transition: all .35s;
+            
+            & :hover{
+                transition: .5s;
+                background-color: var(--bg-color);
+                transform: scale(1.2);
+                border-radius: 20px;
+            }
+    
+            & a{
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                height: 200px;
+                width: 200px;
+                padding: 15px;
+                justify-content: space-between;
+                align-items: center;
+                text-decoration: none;
+    
+                    &::-webkit-scrollbar{
+                        display: none;
+                    }
+    
+                    & div{
+                        pointer-events: none;
+                    }
+                    & h2{
+                        font-size: 20px;
+                    }
+                    & p{
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
 }

@@ -12,8 +12,11 @@
 body{
     font-family: 'Poppins', sans-serif;
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
     background-color: var(--bg-brown);
+}
+html{
+    height: 100vh;
 }
 
 :root{
@@ -23,7 +26,7 @@ body{
     --bdr-color: #FFF;
     --fnt-color: #FFF;
     --fnt-hover: #afabab;
-    --bg-color: #00000062;
+    --bg-color: #00000093;
     --bg-color-2: #333;
     --bg-color-3: #4b4848;
     --btn-color: #FFF;
