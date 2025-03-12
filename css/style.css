@@ -22,11 +22,11 @@ html{
 :root{
 
 /* Paleta de Cores */
-    --bg-brown: rgb(53, 31, 31);
-    --bdr-color: #FFF;
-    --fnt-color: #FFF;
+    --bg-brown: rgb(0, 0, 0);
+    --bdr-color: #000;
+    --fnt-color: #000;
     --fnt-hover: #afabab;
-    --bg-color: #00000093;
+    --bg-color: #FFF;
     --bg-color-2: #333;
     --bg-color-3: #4b4848;
     --btn-color: #FFF;

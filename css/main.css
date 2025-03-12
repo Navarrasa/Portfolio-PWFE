@@ -1,393 +1,96 @@
-/* Telas Pequenas -- Celulares */
 main{
+    width: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100vh;
-    background-color: var(--bg-color-2);
-    
 }
 
-section{
-    width: 100%;
-    height: 100vh;
-    position: relative;
-
-    & .background-video{
-        width: 100%;
-        height: 100vh;
-        position: absolute; 
-
-    & video{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: center;
-        }
-    }   
+a{
+    text-decoration: none;
+    opacity: .9;
 }
-
+a:hover{
+    transition: .8s;
+    transform: scale(1.1);
+    opacity: 1;
+}
 h1{
-    font-size: 20px;
-}
-p{
-    font-size: 12px;
-    line-height: 20px;
+    font-size: 28px;
 }
 h2{
+    font-size: 24px;
+}
+p{
     font-size: 18px;
 }
-.content{
+.content-separator{
     display: flex;
     flex-direction: column;
+    width: 100%;
+    height: 100%;
     align-items: center;
     justify-content: center;
-    padding: 1rem;
-    width: 100%;
-
-    & div{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        z-index: 100;
-        margin-top: 100px;
-        gap: 1rem;
-        background-color: var(--bg-color);
-        backdrop-filter: blur(5px);
-        border-radius: 20px;
-        padding: 20px;
-    }
+    position: relative;
 }
-.container{
+
+.video-background{
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content{
+    z-index: 1;
     display: flex;
     flex-direction: column;
+    width: 50%;
     align-items: center;
-    justify-content: center;
-    padding: 1rem;
-    width: 100%;
     height: auto;
     gap: 1rem;
+    padding: 20px;
+    opacity: .9;
+}
 
-    & div{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        z-index: 100;
-        gap: 1rem;
-        background-color: var(--bg-color);  
-        backdrop-filter: blur(5px);
-        border-radius: 20px;
-        text-align: center;
-        padding: 20px;
+.content-title{
+    background-color: var(--bg-color);
+    border-radius: 20px;
+    padding: 20px;
+    border: none;
+
+    & h1{
+        color: var(--fnt-color2);
     }
 }
 
-.swiper{
+.content-description{
     display: flex;
-    width: 100% !important;
-    overflow-x: hidden;
-    height: 200px;
-    justify-content: center;
-    align-items: center;
-
-
-    & .swiper-wrapper{
-    display: flex;
-    gap: 1rem;
-    width: 100% !important;
-    align-items: center;
-
-    & .swiper-slide{
-        display: flex;
-        flex-direction: column;
-        background-color: var(--bg-color-3);
-        width: 100px !important;
-        height: 100px !important;
-        border-radius: 20px;
-        transition: all .35s;
-        
-        & :hover{
-            transition: .5s;
-            background-color: var(--bg-color);
-            transform: scale(1.2);
-            border-radius: 20px;
-        }
-
-        & a{
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-            height: 100px;
-            width: 100px;
-            padding: 5px;
-            justify-content: space-between;
-            align-items: center;
-            text-decoration: none;
-            gap: 5px;
-            overflow: scroll;
-
-                &::-webkit-scrollbar{
-                    display: none;
-                }
-
-                & div{
-                    pointer-events: none;
-                }
-                & h2{
-                    font-size: 16px;
-                }
-                & p{
-                    font-size: 10px;
-                }
-            }
-        }
-    }
-}
-.swiper-pagination{
-    backdrop-filter: blur(10px);
-}
-/* Telas Médias -- Tablets */
-@media (min-width: 640px) and (max-width: 1023px){
-    
-    h1{
-        font-size: 26px;
-    }
-    p{
-        font-size: 16px;
-        line-height: 24px;
-    }
-    h2{
-        font-size: 22px;
-    }
-    .content{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 3rem;
-        width: 100%;
-    
-        & div{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            z-index: 100;
-            margin-top: 100px;
-            gap: 1.5rem;
-            background-color: var(--bg-color);
-            backdrop-filter: blur(5px);
-            border-radius: 30px;
-            padding: 40px;
-        }
-    }
-    .container{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 3rem;
-        width: 100%;
-        height: auto;
-        gap: 1rem;
-    
-        & div{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            z-index: 100;
-            gap: 1rem;
-            background-color: var(--bg-color);  
-            backdrop-filter: blur(5px);
-            border-radius: 20px;
-            text-align: center;
-            padding: 20px;
-        }
-    }
-    
-    .swiper{
-        display: flex;
-        width: 100% !important;
-        overflow-x: hidden;
-        height: 300px;
-        justify-content: center;
-        align-items: center;
-    
-    
-        & .swiper-wrapper{
-        display: flex;
-        gap: 1rem;
-        width: 100% !important;
-        align-items: center;
-    
-        & .swiper-slide{
-            display: flex;
-            flex-direction: column;
-            background-color: var(--bg-color-3);
-            width: 200px !important;
-            height: 200px !important;
-            border-radius: 20px;
-            transition: all .35s;
-            
-            & :hover{
-                transition: .5s;
-                background-color: var(--bg-color);
-                transform: scale(1.2);
-                border-radius: 20px;
-            }
-    
-            & a{
-                display: flex;
-                flex-direction: column;
-                text-align: center;
-                height: 200px;
-                width: 200px;
-                padding: 15px;
-                justify-content: space-between;
-                align-items: center;
-                text-decoration: none;
-    
-                    &::-webkit-scrollbar{
-                        display: none;
-                    }
-    
-                    & div{
-                        pointer-events: none;
-                    }
-                    & h2{
-                        font-size: 20px;
-                    }
-                    & p{
-                        font-size: 16px;
-                    }
-                }
-            }
-        }
-    }
+    flex-direction: column;
+    gap: 1.5rem;
+    background-color: var(--bg-color);
+    padding: 20px;
+    border-radius: 20px;
 }
 
-/* Telas Grandes -- Notebooks, desktops */
-@media (min-width: 1024px){
-    
-    h1{
-        font-size: 28px;
-    }
-    p{
-        font-size: 20px;
-        line-height: 26px;
-    }
-    h2{
-        font-size: 24px;
-    }
-    .content{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 3rem;
-        width: 100%;
-    
-        & div{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            z-index: 100;
-            margin-top: 100px;
-            gap: 1.5rem;
-            background-color: var(--bg-color);
-            backdrop-filter: blur(10px);
-            border-radius: 30px;
-            padding: 3rem;
-        }
-    }
-    .container{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 2rem;
-        width: 100%;
-        height: auto;
-        gap: 1rem;
-    
-        & div{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            z-index: 100;
-            gap: 1rem;
-            background-color: var(--bg-color);  
-            backdrop-filter: blur(5px);
-            border-radius: 20px;
-            text-align: center;
-            padding: 20px;
-        }
-    }
-    
-    .swiper{
-        display: flex;
-        width: 100% !important;
-        overflow-x: hidden;
-        height: 300px;
-        justify-content: center;
-        align-items: center;
-    
-    
-        & .swiper-wrapper{
-        display: flex;
-        gap: 1rem;
-        width: 100% !important;
-        align-items: center;
-    
-        & .swiper-slide{
-            display: flex;
-            flex-direction: column;
-            background-color: var(--bg-color-3);
-            width: 200px !important;
-            height: 200px !important;
-            border-radius: 20px;
-            transition: all .35s;
-            
-            & :hover{
-                transition: .5s;
-                background-color: var(--bg-color);
-                transform: scale(1.2);
-                border-radius: 20px;
-            }
-    
-            & a{
-                display: flex;
-                flex-direction: column;
-                text-align: center;
-                height: 200px;
-                width: 200px;
-                padding: 15px;
-                justify-content: space-between;
-                align-items: center;
-                text-decoration: none;
-    
-                    &::-webkit-scrollbar{
-                        display: none;
-                    }
-    
-                    & div{
-                        pointer-events: none;
-                    }
-                    & h2{
-                        font-size: 20px;
-                    }
-                    & p{
-                        font-size: 16px;
-                    }
-                }
-            }
-        }
-    }
+.content-cards{
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    width: 100%;
+    height: auto;
+    justify-content: space-evenly;
+}
+
+.card{
+    background-color: var(--bg-color);
+    padding: 15px;
+    border-radius: 10px;
 }

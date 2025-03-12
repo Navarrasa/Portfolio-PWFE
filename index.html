@@ -28,250 +28,50 @@
         </nav>
     </header>
     <main>  
-        <section>
-            <div class="background-video">
-                <video autoplay loop muted>
-                    <source src="https://github.com/Navarrasa/Ferramentas/raw/refs/heads/main/videos/video-background.mp4" type="video/mp4">
+        <section class="content-separator">
+            <div class="video-background">
+                <video class="video" autoplay muted loop>
+                    <source src="https://github.com/Navarrasa/Ferramentas/raw/refs/heads/main/videos/video_vertical.mp4">
                 </video>
             </div>
             <div class="content">
-                <!-- Mensagem introdutória -->
-                <div>
-                    <h1 style="text-align: center;">Portfólio Senai: Uma Jornada de Aprendizado em JavaScript</h1>
+                <div class="content-title">
+                    <h1>Portfólio PWFE</h1>
+                </div>
+                <div class="content-description">
                     <p>
-                        O Portfólio Senai é um site criado com o objetivo de exibir o aprendizado e os projetos desenvolvidos ao longo das aulas de JavaScript. Nele, cada estudante tem a oportunidade de mostrar suas habilidades e a evolução em uma das linguagens de programação mais poderosas da web.
+                        O Portfólio-PWFE (Programação Front-End) é uma iniciativa voltada para auxiliar novos programadores no aprendizado prático do desenvolvimento front-end. Ele oferece uma série de atividades e exercícios que permitem aos iniciantes aplicar conceitos de HTML, CSS, JavaScript e frameworks como React, por meio da criação de projetos reais e desafiadores.
+                    </p>
+                    <p>
+                        O objetivo é ajudar o programador a desenvolver habilidades essenciais, ao mesmo tempo em que constrói um portfólio atrativo para processos seletivos. As atividades incluem a construção de layouts responsivos, formulários dinâmicos, integração com APIs e criação de componentes reutilizáveis, sempre com foco em práticas do mercado. Assim, o Portfólio-PWFE é uma ferramenta prática para acelerar o aprendizado e gerar um portfólio de qualidade para futuros desafios profissionais.
                     </p>
                 </div>
-            </div>
-            
-            <div class="container">
-                <div>
-                    <h2>Venha conhecer os exercícios!</h2>
-                </div>
-            </div>
-            <!-- Slider de exercícios -->
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                <!-- Slide 1 -->
-                  <div class="swiper-slide">
+                <div class="content-cards">
+                    <!-- Card 1 -->
                     <a href="exercicios/paginas/exercicio01.html">
-                        <div>
-                            <h2>Exercício 1</h2>
-                        </div>
-                        <div>
-                            <p>
-                                Descrição Resumida:
-                            </p>
-                            <p>
-                                Calcule a diferença entre 2 números.
-                            </p>
+                        <div class="card">
+                            <h2>Aula 1</h2>
+                            <p>Prototipação de Sites</p>
                         </div>
                     </a>
-                  </div>
-                <!-- Slide 2 -->
-                  <div class="swiper-slide">
-                    <a href="#">
-                        <div>
-                            <h2>Exercício 2</h2>
-                        </div>
-                        <div>
-                            <p>
-                                Descrição Resumida:
-                            </p>
-                            <p>
-                                Verifique se um numero é par.
-                            </p>
+                    <!-- Card 2 -->
+                    <a href="exercicios/paginas/exercicio02.html">
+                        <div class="card">
+                            <h2>Aula 2</h2>
+                            <p>Exercícios JavaScript</p>
                         </div>
                     </a>
-                  </div>
-                <!-- Slide 3 -->
-                  <div class="swiper-slide">
-                    <a href="#">
-                        <div>
-                            <h2>Exercício 3</h2>
-                        </div>
-                        <div>
-                            <p>
-                                Descrição Resumida:
-                            </p>
-                            <p>
-                                Solicite 2 notas, e veja se o 1 é múltiplo do segundo.
-                            </p>
+                    <!-- Card 3 -->
+                    <a href="exercicios/paginas/exercicio01.html">
+                        <div class="card">
+                            <h2>Aula 3</h2>
+                            <p></p>
                         </div>
                     </a>
-                  </div>
-                <!-- Slide 4 -->
-                  <div class="swiper-slide">
-                    <a href="#">
-                        <div>
-                            <h2>Exercício 4</h2>
-                        </div>
-                        <div>
-                            <p>
-                                Descrição Resumida:
-                            </p>
-                            <p>
-                                Converta uma temperatura em celsius para Fahrenheit
-                            </p>
-                        </div>
-                    </a>
-                  </div>
-                <!-- Slide 5 -->
-                  <div class="swiper-slide">
-                    <a href="#">
-                        <div>
-                            <h2>Exercício 5</h2>
-                        </div>
-                        <div>
-                            <p>
-                                Descrição Resumida:
-                            </p>
-                            <p>
-                                Calcule a área (base * altura).
-                            </p>
-                        </div>
-                    </a>
-                  </div>
-                <!-- Slide 6 -->
-                  <div class="swiper-slide">
-                    <a href="#">
-                        <div>
-                            <h2>Exercício 6</h2>
-                        </div>
-                        <div>
-                            <p>
-                                Descrição Resumida: 
-                            </p>
-                            <p>
-                                Verifique se a pessoa está acima da média, solicitando duas notas.
-                            </p>
-                        </div>
-                    </a>
-                  </div>
-                <!-- Slide 7 -->
-                  <div class="swiper-slide">
-                    <a href="#">
-                        <div>
-                            <h2>Exercício 7</h2>
-                        </div>
-                        <div>
-                            <p>
-                                Descrição Resumida:
-                            </p>
-                            <p>
-                                Calcule o IMC de uma pessoa. 
-                            </p>
-                        </div>
-                    </a>
-                  </div>
-                <!-- Slide 8 -->
-                  <div class="swiper-slide">
-                    <a href="#">
-                        <div>
-                            <h2>Exercício 8</h2>
-                        </div>
-                        <div>
-                            <p>
-                                Descrição Resumida:
-                            </p>
-                            <p>
-                                Verifique se um ano é bissexto. 
-                            </p>
-                        </div>
-                    </a>
-                  </div>
-                <!-- Slide 9 -->
-                  <div class="swiper-slide">
-                    <a href="#">
-                        <div>
-                            <h2>Exercício 9</h2>
-                        </div>
-                        <div>
-                            <p>
-                                Descrição Resumida:
-                            </p>
-                            <p>
-                                Solicite ao usuário uma taxa de câmbio, e um valor desejado, exiba o valor convertido. 
-                            </p>
-                        </div>
-                    </a>
-                  </div>
-                <!-- Slide 10 -->
-                  <div class="swiper-slide">
-                    <a href="#">
-                        <div>
-                            <h2>Exercício 10</h2>
-                        </div>
-                        <div>
-                            <p>
-                                Descrição Resumida:
-                            </p>
-                            <p>
-                                Pedir um número ao usuário de 1 a 9, e imprima a tabuada desse valor.
-                            </p>
-                        </div>
-                    </a>
-                  </div>
-                <!-- Slide 11 -->
-                  <div class="swiper-slide">
-                    <a href="#">
-                        <div>
-                            <h2>Exercício 11</h2>
-                        </div>
-                        <div>
-                            <p>
-                                Descrição Resumida:
-                            </p>
-                            <p>
-                                Neste exercício, você vai simular um jogo de "Pedra, papel e tesoura" contra o computador.  
-                            </p>
-                        </div>
-                    </a>
-                  </div>
-                <!-- Slide 12 -->
-                <div class="swiper-slide">
-                    <a href="#">
-                        <div>
-                            <h2>Exercício 12</h2>
-                        </div>
-                        <div>
-                            <p>
-                                Descrição Resumida:
-                            </p>
-                            <p>
-                                Calcule o fatorial de um número.  
-                            </p>
-                        </div>
-                    </a>
-                  </div>
+                    <!-- Card 3 -->
                 </div>
-                <div class="swiper-pagination"></div>
+            </div>
         </section>
     </main>
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <!-- Initialize Swiper -->
-    <script defer>
-        var swiper = new Swiper(".mySwiper", {
-          slidesPerView: 2.3, // valor padrão
-          centeredSlides: true,
-          pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-          },
-          breakpoints: {
-            640: {
-              slidesPerView: 6,
-              
-            },
-            // Para telas com largura mínima de 1024px
-            1024: {
-              slidesPerView: 10,
-            //   spaceBetween: 30, --> largura entre cards
-            },
-          }
-        });
-      </script>
-      
 </body>
 </html>
