@@ -16,12 +16,11 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1rem;
 }
 
 :root{
     --bg-color: #000000;
-    --fnt-color: #FFF;
+    --fnt-color: #000;
     --bdr-color: #000;
     --btn-color: #FFF;
 }

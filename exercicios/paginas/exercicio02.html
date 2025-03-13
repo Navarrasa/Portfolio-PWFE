@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <title>Exercício 1</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#"><i class='bx bx-left-arrow-alt' title="Aula Anterior"></i></a></li>
+                <li><a href="../../index.html" title="Página Inicial">Home</a></li>
+                <li><a href="#"><i class='bx bx-right-arrow-alt' title="Próxima Aula"></a></i></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Exercício 1 -->
+        <section class="exercise">
+            <div class="exercise-title">
+                <h1>Exercício 1</h1>
+                <p>Calcule a diferença entre dois números</p>
+            </div>
+            <form>
+                <input type="number" name="primeiro_numero_subtrair"> 
+                <p> - </p>
+                <input type="number" name="segundo_numero_subtrair">
+                <p> = </p>
+                <input type="number" name="total_subtracao" readonly>
+            </form>
+        </section>
+        <!-- Exercício 2 -->
+        <section class="exercise">
+            <div class="exercise-title">
+                <h1>Exercício 2</h1>
+                <p>Verifique se um numero é par.</p>
+            </div>
+            <form>
+                <p>Número:</p>
+                <input type="number" name="verificar_par_impar">
+                <p> = </p> 
+                <input type="text" name="verificador_par_impar" readonly>
+            </form>
+        </section>
+        <!-- Exercício 3 -->
+        <section class="exercise">
+            <div class="exercise-title">
+                <h1>Exercício 3</h1>
+                <p>Solicite 2 notas, e veja se o 1 é múltiplo do segundo. (ex. 9 é múltiplo de 3)</p>
+            </div>
+            <form>
+                <p>Primeiro Número:</p>
+                <input type="number" name="primeiro_multiplo">
+                <p></p>
+                <p>Segundo Número:</p>
+                <input type="number" name="segundo_multiplo">
+                <p>Resultado:</p>
+                <input type="text" name="total_verificador_multiplos" readonly>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <section>
+            <div>
+                <h2>Portfólio Senai</h2>
+            </div>
+            <div>
+                <p>&copy; Feito por Gustavo Bruno - 2025</p>
+            </div>
+        </section>
+    </footer>
+    <script src="../scripts/exercicio02.js" defer></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</body>
+</html>
