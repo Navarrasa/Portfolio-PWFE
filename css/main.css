@@ -66,6 +66,8 @@ p{
     border-radius: 20px;
     padding: 20px;
     border: none;
+    width: 100%;
+    text-align: center;
 
     & h1{
         color: var(--fnt-color2);
