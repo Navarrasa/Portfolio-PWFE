@@ -26,10 +26,11 @@
                 <p>Calcule a diferença entre dois números</p>
             </div>
             <form>
+                <p>Primeiro Número</p>
                 <input type="number" name="primeiro_numero_subtrair"> 
-                <p> - </p>
+                <p>Segundo Número</p>
                 <input type="number" name="segundo_numero_subtrair">
-                <p> = </p>
+                <p>Resultado</p>
                 <input type="number" name="total_subtracao" readonly>
             </form>
         </section>
@@ -42,7 +43,7 @@
             <form>
                 <p>Número:</p>
                 <input type="number" name="verificar_par_impar">
-                <p> = </p> 
+                <p>Resultado</p>
                 <input type="text" name="verificador_par_impar" readonly>
             </form>
         </section>
@@ -161,7 +162,7 @@
             </form>
         </section>
         <!-- Exercício 10 -->
-        <!-- <section class="exercise">
+        <section class="exercise">
             <div class="exercise-title">
                 <h1>Exercício 10</h1>
                 <p>
@@ -172,39 +173,45 @@
                 <p>Número:</p>
                 <input type="number" name="numero_tabuada">
                 <p>Resultado:</p>
-                <input type="number" name="tabuada" readonly>
+                <textarea name="tabuada" rows="5" cols="20" readonly></textarea>
+
             </form>
-        </section> -->
+        </section>
         <!-- Exercício 11 -->
-        <!-- <section class="exercise">
+        <section class="exercise">
             <div class="exercise-title">
                 <h1>Exercício 11</h1>
-                <p>
-                    Neste exercício, você vai simular um jogo de "Pedra, papel e tesoura" contra o computador.  
-                </p>
+                <p>Jogue "Pedra, Papel e Tesoura" contra o computador!</p>
             </div>
             <form>
-                <p>Ano:</p>
-                <input type="number" name="ano">
+                <p>Você:</p>
+                <select name="jogador_" id="jogador_">
+                    <option></option>
+                    <option value="pedra">Pedra</option>
+                    <option value="papel">Papel</option>
+                    <option value="tesoura">Tesoura</option>
+                </select>
+        
+                <p>Computador:</p>
+                <input type="text" name="computador_" id="computador_" readonly>
+        
                 <p>Resultado:</p>
-                <input type="text" name="ano_bissexto" readonly>
+                <input type="text" name="resultado_jogador_computador" readonly>
             </form>
-        </section> -->
+        </section>
         <!-- Exercício 12 -->
-        <!-- <section class="exercise">
+        <section class="exercise">
             <div class="exercise-title">
-                <h1>Exercício 12</h1>
-                <p>
-                    Neste exercício, você precisa criar um programa que calcula o fatorial de um número. O fatorial de um número é o produto de todos os números inteiros positivos de 1 até o número. Por exemplo, o fatorial de 5 (representado por 5!) é 1 * 2 * 3 * 4 * 5 = 120.  
-                </p>
+                <h1>Exercício - Cálculo de Fatorial</h1>
+                <p>Digite um número e veja seu fatorial.</p>
             </div>
             <form>
-                <p>Ano:</p>
-                <input type="number" name="ano">
+                <p>Número:</p>
+                <input type="number" name="fatorial" id="fatorial" min="0">
                 <p>Resultado:</p>
-                <input type="text" name="ano_bissexto" readonly>
+                <textarea name="resultado_fatorial" rows="5" cols="20" readonly></textarea>
             </form>
-        </section> -->
+        </section>
     </main>
     <footer>
         <section>

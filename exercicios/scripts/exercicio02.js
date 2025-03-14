@@ -137,6 +137,10 @@ document.addEventListener("DOMContentLoaded", function () {
         if ((num1 + num2)/2 >= 80){
             total.value = "Acima da Média"
         }
+        else{
+            total.value = "Abaixo da Média"
+
+        }
 
         if (total.value % 2 === 0) {
             total2.value = "Número Par!"
@@ -247,7 +251,7 @@ document.addEventListener("DOMContentLoaded", function () {
             return;
         }
 
-        retorno.value = cambio_value * dinheiro_value;
+        retorno.value = dinheiro_value / cambio_value;
 
     }
 
@@ -258,18 +262,86 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Exercício 10
 
-// document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () {
 
-//     const numero = document.querySelector("input[name='numero_tabuada']");
-//     const tabuada = document.querySelector("input[name='tabuada']");
+    const numero = document.querySelector("input[name='numero_tabuada']");
+    const tabuada = document.querySelector("textarea[name='tabuada']");
 
-//     function tabuada(){
+    function tabuadaNumeros(){
 
-//         console.log(numero.value);
+        // console.log(numero.value);
+        const num = parseInt(numero.value);
+        let resultado = '';
 
+        for (i = 0; i <= 10; i++){
+            resultado += `${num} x ${i} = ${num * i}\n`;
+        }
 
-//     }
+        tabuada.value = resultado;
 
-//     numero.addEventListener("input", tabuada);
+    }
 
-// });
+    numero.addEventListener("input", tabuadaNumeros);
+
+});
+
+// Exercício 11
+
+document.addEventListener("DOMContentLoaded", function () {
+    const opcoes = ["pedra", "papel", "tesoura"];
+    const opcaoJogador = document.querySelector("select[name='jogador_']");
+    const opcaoComputador = document.querySelector("input[name='computador_']");
+    const resultado = document.querySelector("input[name='resultado_jogador_computador']");
+
+    function JogadorContraMaquina() {
+        const jogador = opcaoJogador.value;
+        const computador = opcoes[Math.floor(Math.random() * opcoes.length)];
+
+        opcaoComputador.value = computador; // Exibir escolha do computador
+
+        // Determinar o resultado
+        if (jogador === computador) {
+            resultado.value = "Empate!";
+        } else if (
+            (jogador === "pedra" && computador === "tesoura") ||
+            (jogador === "papel" && computador === "pedra") ||
+            (jogador === "tesoura" && computador === "papel")
+        ) {
+            resultado.value = "Você venceu!";
+        } else {
+            resultado.value = "Você perdeu!";
+        }
+    }
+
+    opcaoJogador.addEventListener("change", JogadorContraMaquina);
+});
+
+// Exercício 12
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const numeroFatorial = document.querySelector("input[name='fatorial']");
+    const numeroResultado = document.querySelector("textarea[name='resultado_fatorial']");
+
+    function calcularFatorial() {
+        const num = parseInt(numeroFatorial.value);
+
+        if (isNaN(num) || num < 0) {
+            numeroResultado.value = "Digite um número válido (≥ 0)";
+            return;
+        }
+
+        let resultado = `Fatorial de ${num}:\n`;
+        let fatorial = 1;
+
+        for (let i = num; i > 0; i--) {
+            fatorial *= i;
+            resultado += (i > 1) ? `${i} x ` : `${i} = `;
+        }
+
+        resultado += fatorial;
+        numeroResultado.value = resultado;
+    }
+
+    numeroFatorial.addEventListener("input", calcularFatorial);
+});
