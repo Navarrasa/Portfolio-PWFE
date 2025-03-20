@@ -49,7 +49,12 @@ form{
     & h1{
         font-size: 10px;
     }
-
+    & textarea{
+        border-radius: 20px;
+        height: auto;
+        width: auto;
+        padding: 5px;
+    }
 }
 
 .main{
@@ -98,6 +103,7 @@ form{
                 object-fit: cover;  
             }
         }
+
     }
 }
 
@@ -145,6 +151,12 @@ form{
         & h1{
             font-size: 14px;
         }
+        & textarea{
+            border-radius: 20px;
+            height: auto;
+            width: auto;
+            padding: 10px;
+        }
     }
 }
 
@@ -184,6 +196,7 @@ form{
     form{
         display: flex;
         flex-direction: row;
+        width: 100%;
         gap: 30px;
         align-items: center;
         padding: 2rem;
@@ -196,6 +209,12 @@ form{
         }
         & h1{
             font-size: 14px;
+        }
+        & textarea{
+            border-radius: 20px;
+            height: auto;
+            width: auto;
+            padding: 10px;
         }
     }
 }
