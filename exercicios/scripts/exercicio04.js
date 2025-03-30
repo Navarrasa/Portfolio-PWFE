@@ -62,10 +62,10 @@ document.write(`<p> Frase limpa! ${limpo} </p>`);
 
 
 let h1 = window.document.getElementsByTagName('h1')[0];
-h1.style.color = 'blue';
+h1.style.color = 'white';
 
 let corpo = window.document.body;
-corpo.style.background = 'yellow';
+corpo.style.background = 'white';
 
 // Mudar a cor de uma Div
 function mudarCor(){
