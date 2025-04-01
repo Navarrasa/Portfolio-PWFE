@@ -134,16 +134,25 @@
 //     }
 // }
 
-console.log("Exercício 8")
+// console.log("Exercício 8")
 
-let oitavo_vetor = [];
+// let oitavo_vetor = [];
 
+// for (let a = 0; a <= 5; a++){
+//     let inteiros_positivos = prompt("Digite um número:");
+//     oitavo_vetor.push(inteiros_positivos);
+// }
 
+// let oitavo_vetor_B = [...oitavo_vetor];
+// let indice = oitavo_vetor.length / 2;
+// let quantidade = oitavo_vetor.length / 2;
+// oitavo_vetor_B.splice(indice, quantidade);
 
+// console.log(oitavo_vetor)
+// console.log(oitavo_vetor_B)
 
-// 8. Desenvolva um programa que leia 6 números inteiros e armazene em um vetor A. 
-//    Carregue um vetor B (de mesmo tipo e tamanho) com a metade dos valores armazenados em A. 
-//    Apresente os valores dos dois vetores.
+console.log("Exercício 9")
+
 
 // 9. Desenvolva um programa que leia 5 números inteiros e armazene em um vetor A. 
 //    Leia 5 números inteiros e armazene em um vetor B. 
