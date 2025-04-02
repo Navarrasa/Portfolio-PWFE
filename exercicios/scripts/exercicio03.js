@@ -1,19 +1,16 @@
 // Mostra uma mensagem inicial ao usuário
 alert("Dev, a seguir virá uma vasta lista de prompts para você inserir dados. Insira os, por gentileza, cada um faz parte de um exercício");
 alert("Exercício 1");
-console.log("Exercício 1")
 
 let primeiro_vetor = [10,20,30,40,50]; // Array inicial com 5 números
 
 // Itera sobre cada elemento do array
 for(let iterador of primeiro_vetor){
-    console.log(`Valor dobrado: ${iterador * 2}`);
+    alert(`Valor dobrado: ${iterador * 2}`);
 }
-
 
 // Exercício 2
 alert("Exercício 2");
-console.log("Exercício 2")
 
 let segundo_vetor = [10,20,30,40,50,60,70,80,90];
 let soma_total = 0;
@@ -23,11 +20,11 @@ for(let iterador of segundo_vetor){
     soma_total += iterador;
 }
 
-console.log("A média aritmética dos valores é: " + soma_total / segundo_vetor.length);
+alert(`A média aritmética dos valores é: ${media}`);
+
 
 // Exercício 3
 alert("Exercício 3");
-console.log("Exercício 3")
 
 let terceiro_vetor = [];
 // Ler valores -> input usuário
@@ -52,39 +49,33 @@ console.log(media_idades);
 // mostrando as idades acima da média
 for(let a of terceiro_vetor){
     if(a >= media_idades){
-        console.log("Esta é uma idade acima da média! " + a);
+        alert("Esta é uma idade acima da média! " + a);
     }
 }
 
 // Exercício 4
 alert("Exercício 4");
-console.log("Exercício 4")
 
 // Criando um array para armazenar os 10 números
 let quarto_vetor = [];
-let pares = [];
-
-// Lendo 10 números (usando prompt para entrada do usuário)
 for (let i = 0; i < 10; i++) {
+    // parseInt transforma o prompt, que traz uma String, em int
     let numero = parseInt(prompt(`Digite o ${i + 1}º número:`));
-    quarto_vetor.push(numero);
-    
-    // Verificando se o número é par
-    if (numero % 2 === 0) {
-        pares.push(numero);
+    // Verifica se é realmente um número
+    if(isNaN(numero)) {
+        alert("Digite um número válido!");
+        i--; // retorna à iteração anterior
+        continue;
     }
+    quarto_vetor.push(numero);
 }
+//  Filtro para encontrar os números pares
+const pares = quarto_vetor.filter(num => num % 2 === 0);
+// Operador ternário para demonstrar os números pares ou ímpares
+console.log(pares.length > 0 ? `Pares: ${pares}` : "Todos são ímpares");
 
-// Exibindo os resultados
-if (pares.length > 0) {
-    console.log("Números pares encontrados:");
-    console.log(pares);
-} else {
-    console.log("Todos os números são ímpares");
-}
-
+// Exercício 5
 alert("Exercício 5");
-console.log("Exercício 5")
 
 let quinto_vetor = [];
 
@@ -100,71 +91,55 @@ for (let a = 0; a <= 8; a++){
 }
 console.log(`Esses sao os valores armazenados: ${quinto_vetor}`);
 
+// Exercício 6
 alert("Exercício 6");
-console.log("Exercício 6")
-
-let achou = false;
 
 let sexto_vetor = ["Gustavo","Bruno","Leticia","Nicolas","Adrian","Luana","Gabriela","Kauan","Francisca","Yngrid"];
 
-while (achou == false) {
-    
-    let nome_procurado = prompt("Digite um nome e vamos ver se ele está na lista!");
-    console.log(nome_procurado);
-    for (let a = 0; a <= sexto_vetor.length; a++){
-        console.log(nome_procurado);
-        if (nome_procurado == sexto_vetor[a]){
-            alert(`Nome encontrado! Ele está na posição ${a}`);
-            achou = true;
-            break;
-        }
+while (true) {
+    let nome = prompt("Digite um nome para buscar:");
+    // busca o nome direto pelo index no vetor
+    let posicao = sexto_vetor.indexOf(nome);
+    // verifica se o nome está na lista pela sua posição, retornará -1 caso não estiver
+    if (posicao !== -1) {
+        alert(`Nome encontrado na posição ${posicao}!`);
+        break;
     }
-    if (!achou) {
-        alert("Nome não encontrado!");
-    }
+    alert("Nome não encontrado!");
 }
 
 alert("Exercício 7");
-console.log("Exercício 7")
-let achou_ = false;
 let setimo_vetor = ["Gustavo","Bruno","Leticia","Nicolas","Adrian","Luana","Gabriela","Kauan","Francisca","Yngrid"];
 let chances = 5;
 
-for (let a = 0; a <= setimo_vetor.length; a++){
-    let nome_procurado_ = prompt("Digite um nome e vamos ver se ele está na lista!");
-    if (nome_procurado_ == setimo_vetor[a]){
-        alert(`Nome encontrado! Ele está na posição ${a}. Você achou ele faltando ${chances} chances restantes.`);
+while (chances > 0) {
+    let nome = prompt("Digite um nome:");
+    // busca o nome direto pelo index no vetor
+    let posicao = setimo_vetor.indexOf(nome);
+    // verifica se o nome está na lista pela sua posição, retornará -1 caso não estiver
+    if (posicao !== -1) {
+        alert(`Nome encontrado na posição ${posicao}! Restam ${chances} chances.`);
+        break;
     }
-    if (!achou_){
-        alert("Nome não encontrado!");
-        chances -= 1;
-        if (chances <= 0){
-            alert("Acabou as suas chances!")
-            break;
-        }
-    }
+    chances--;
+    alert(`Nome não encontrado! Restam ${chances} chances.`);
 }
+if (chances === 0) alert("Suas chances acabaram!");
+
 
 alert("Exercício 8");
-console.log("Exercício 8")
 
 let oitavo_vetor = [];
-
-for (let a = 0; a <= 5; a++){
-    let inteiros_positivos = prompt("Digite um número:");
-    oitavo_vetor.push(inteiros_positivos);
+for (let a = 0; a < 6; a++) {
+    oitavo_vetor.push(parseInt(prompt(`Digite o ${a+1}º número:`)));
 }
+// slice() é uma função do Javascript que "corta" uma array original, mas não altera ela, e cria uma nova array com os valores cortados
+let oitavo_vetor_B = oitavo_vetor.slice(0, oitavo_vetor.length / 2);
+alert(`Original: ${oitavo_vetor}`);
+alert(`Metade: ${oitavo_vetor_B}`);
 
-let oitavo_vetor_B = [...oitavo_vetor];
-let indice = oitavo_vetor.length / 2;
-let quantidade = oitavo_vetor.length / 2;
-oitavo_vetor_B.splice(indice, quantidade);
-
-console.log(oitavo_vetor)
-console.log(oitavo_vetor_B)
 
 alert("Exercício 9");
-console.log("Exercício 9");
 
 let nono_vetor = [];
 let nono_vetor_B = [];
@@ -183,6 +158,6 @@ for (let a = 0; a <= 5; a++){
 
 let vetor_C = [...nono_vetor, ...nono_vetor_B];
 
-console.log(nono_vetor);
-console.log(nono_vetor_B);
-console.log(vetor_C);
+alert(nono_vetor);
+alert(nono_vetor_B);
+alert(vetor_C);
