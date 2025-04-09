@@ -22,17 +22,17 @@
 
 // console.log(Calculadora(5,10,"+"));
 
-// // Exercício 2
-// alert("Exercício 2");
-// let texto = prompt("Digite uma palavra")
-// const InverterString = (string) => {
-//     // split -> transforma string em array, reverse coloca ela de trás para frente, join deleta todos os espaços.
+// Exercício 2
+alert("Exercício 2");
+let texto = prompt("Digite uma palavra")
+const InverterString = (string) => {
+    // split -> transforma string em array, reverse coloca ela de trás para frente, join deleta todos os espaços.
 
-//     let textoInvertido = texto.split("").reverse().join("");
-//     return textoInvertido;
-// }
+    let textoInvertido = texto.split("").reverse().join("");
+    return textoInvertido;
+}
 
-// console.log(InverterString(texto));
+console.log(InverterString(texto));
 
 // // Exercício 3
 // alert("Exercício 3");

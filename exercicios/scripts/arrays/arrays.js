@@ -8,5 +8,5 @@ import { Ex07 } from './ex07.js';
 import { Ex08 } from './ex08.js';
 import { Ex09 } from './ex09.js';
 
-
+let atividade1 = Ex01()
 
