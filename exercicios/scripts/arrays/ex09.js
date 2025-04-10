@@ -18,7 +18,7 @@ for (let a = 0; a <= 5; a++){
 
 let vetor_C = [...nono_vetor, ...nono_vetor_B];
 
-alert(nono_vetor);
-alert(nono_vetor_B);
-alert(vetor_C);
-}
+alert(`Lista 1: ${nono_vetor}`);
+alert(`Lista 2: ${nono_vetor_B}`);
+alert(`Lista 3: ${vetor_C}`);
+}   

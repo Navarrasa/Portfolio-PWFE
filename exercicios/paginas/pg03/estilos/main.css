@@ -3,13 +3,14 @@
     flex-direction: column;
     width: 100%;
     padding: 20px;
-    height: 100%;
 }
 
 section{
     width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
     & h1{
         font-size: 18px;
@@ -38,3 +39,148 @@ section{
 
 }
 
+.button-container{
+    display: grid;
+    grid-template-columns: 120px 120px;
+    justify-content: center;
+    gap: 5px;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    height: auto;
+}
+
+button{
+    border: none;
+    border-radius: 20px;
+    padding: 2px;
+
+    &:hover{
+        transition: 0.6s all ease;
+        background-color: rgb(173, 171, 171);
+    }
+}
+
+@media (min-width:540px) and (max-width:1023px){
+
+    .main{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 20px;
+    }
+    
+    section{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    
+        & h1{
+            font-size: 22px;
+        }
+    
+        & p{
+            font-size: 18px;
+        }
+    }
+    
+    #caixa-grande{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 20px;
+        gap: 15px;
+    
+        & h1{
+            font-size: 22px;
+        }
+    
+        & p {
+            font-size: 18px;
+            text-align: justify;
+        }
+    
+    }
+    
+    .button-container{
+        display: grid;
+        grid-template-columns: 120px 120px 120px;
+        justify-content: center;
+        gap: 20px;
+        align-items: center;
+        padding: 20px;
+        width: 100%;
+        height: auto;
+    }
+    
+    button{
+        border: none;
+        border-radius: 20px;
+        padding: 12px;
+    
+        &:hover{
+            transition: 0.6s all ease;
+            background-color: rgb(173, 171, 171);
+        }
+    }
+    
+}
+
+@media (min-width:1024px){
+
+    section{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        & h1{
+            font-size: 26px;
+        }
+    
+        & p{
+            font-size: 22px;
+        }
+    }
+    
+    #caixa-grande{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        padding: 30px;
+        gap: 20px;
+    
+        & h1{
+            font-size: 26px;
+        }
+    
+        & p {
+            font-size: 22px;
+            text-align: justify;
+        }
+    
+    }
+    
+    .button-container{
+        display: grid;
+        grid-template-columns: 200px 200px 200px;
+        justify-content: center;
+        gap: 20px;
+        align-items: center;
+        padding: 20px;
+        width: 100%;
+        height: auto;
+    }
+    
+    button{
+        border: none;
+        border-radius: 20px;
+        padding: 12px;
+    
+        &:hover{    
+            transition: 0.6s all ease;
+            background-color: rgb(173, 171, 171);
+        }
+    }
+    
+}

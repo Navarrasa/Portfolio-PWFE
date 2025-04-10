@@ -17,5 +17,5 @@ for (let i = 0; i < 10; i++) {
 //  Filtro para encontrar os números pares
 const pares = quarto_vetor.filter(num => num % 2 === 0);
 // Operador ternário para demonstrar os números pares ou ímpares
-console.log(pares.length > 0 ? `Pares: ${pares}` : "Todos são ímpares");
+alert(pares.length > 0 ? `Pares: ${pares}` : "Todos são ímpares");
 }

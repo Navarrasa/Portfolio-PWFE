@@ -8,6 +8,7 @@ let soma_total = 0;
 for(let iterador of segundo_vetor){
     soma_total += iterador;
 }
+let media = soma_total / segundo_vetor.length;
 
 alert(`A média aritmética dos valores é: ${media}`);
 }

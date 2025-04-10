@@ -3,8 +3,8 @@ alert("Exercício 5");
 
 let quinto_vetor = [];
 
+alert("Digite números entre 100 e 200!");
 for (let a = 0; a <= 8; a++){
-    alert("Digite números entre 100 e 200!");
     let numero = parseInt(prompt(`Digite o ${a + 1}º número:`));
     if (numero < 100 || numero > 200){
         alert("Valor inválido!");
@@ -13,5 +13,5 @@ for (let a = 0; a <= 8; a++){
         quinto_vetor.push(numero);
     }
 }
-console.log(`Esses sao os valores armazenados: ${quinto_vetor}`);
+alert(`Esses sao os valores armazenados: ${quinto_vetor}`);
 }
