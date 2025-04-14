@@ -1,0 +1,14 @@
+main{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+section{
+    padding: 20px;
+}
+
