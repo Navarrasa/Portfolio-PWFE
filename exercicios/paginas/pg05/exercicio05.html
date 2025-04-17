@@ -50,28 +50,28 @@
 
                 <div class="input-container">
                     <label for="sexo">Sexo:</label>
-                    <input type="radio" id="masculino" name="sexo" value="masculino" required>
+                    <input type="radio" id="masculino" name="sexo" value="masculino">
                     <label for="masculino">Masculino</label>
-                    <input type="radio" id="feminino" name="sexo" value="feminino" required>
+                    <input type="radio" id="feminino" name="sexo" value="feminino">
                     <label for="feminino">Feminino</label>
                 </div>
 
                 <div class="input-container">
                     <label for="telefone">Telefone:</label>
-                    <input type="tel" id="telefone" name="telefone" required>
+                    <input type="tel" id="telefone" name="telefone">
                 </div>
 
                 <div class="input-container">
                     <label for="celular">Celular:</label>
-                    <input type="tel" id="celular" name="celular" required>
+                    <input type="tel" id="celular" name="celular">
                 </div>
 
                 <div class="input-container">
                     <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
+                    <input type="email" id="email" name="email">
                 </div>
                 
-                <button type="submit" onclick="validarCamposFormulario()">Enviar</button>
+                <button  type=submit onclick="validarCamposFormulario()">Enviar</button>
             </div>
        </form>
     </main>
@@ -85,6 +85,57 @@
             </div>
         </section>
     </footer>
+    <script>
+    // Exibe uma mensagem inicial para o usuário
+    // alert("Exercício 9");
+
+    // Seleciona os campos do formulário pelo atributo 'name'
+    const nome = document.querySelector("input[name='nome']");
+    const endereco = document.querySelector("input[name='endereco']");
+    const sexo = document.querySelector("input[name='sexo']");
+    const telefone = document.querySelector("input[name='telefone']");
+    const celular = document.querySelector("input[name='celular']");
+    const email = document.querySelector("input[name='email']");
+
+    // Define a função que valida se os campos do formulário estão preenchidos
+    const validarCamposFormulario = () => {
+        // Verifica se o campo nome está vazio
+        if (nome.value == "") {
+            alert("Campo nome não pode ser vazio!");
+            return false;
+        }
+        // Verifica se o campo endereço está vazio
+        else if (endereco.value == "") {
+            alert("Campo endereço não pode ser vazio!");
+            return false;
+            }
+            // Verifica se o campo sexo está vazio
+            else if (sexo.value == "") {
+                alert("Campo sexo não pode ser vazio!");
+                return false;
+            }
+            // Verifica se o campo telefone está vazio
+        else if (telefone.value == "") {
+            alert("Campo telefone não pode ser vazio!");
+            return false;
+        }
+        // Verifica se o campo celular está vazio
+        else if (celular.value == "") {
+            alert("Campo celular não pode ser vazio!");
+            return false;
+        }
+        // Verifica se o campo email está vazio
+        else if (email.value == "") {
+            alert("Campo email não pode ser vazio!");
+            return false;
+        }
+        // Caso todos os campos estejam preenchidos, exibe mensagem de sucesso
+        else {
+            alert("Todos os campos estão preenchidos!");
+            return true;
+        }
+    }
+    </script>
     <script  type="module" src="../../scripts/arrow_function/arrowfunction.js" defer></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </body>

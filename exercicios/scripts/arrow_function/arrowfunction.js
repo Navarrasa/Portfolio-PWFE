@@ -6,7 +6,6 @@ import { Ex05 } from './ex05.js';
 import { Ex06 } from './ex06.js';
 import { Ex07 } from './ex07.js';
 import { Ex08 } from './ex08.js';
-import { Ex09 } from './ex09.js';
 import { Ex10 } from './ex10.js';
 import { Ex11 } from './ex11.js';
 import { Ex12 } from './ex12.js';
@@ -22,7 +21,6 @@ const exercises = {
     6: Ex06,
     7: Ex07,
     8: Ex08,
-    9: Ex09,
     10: Ex10,
     11: Ex11,
     12: Ex12,
@@ -40,4 +38,4 @@ document.querySelectorAll('.ex-btn').forEach(button => {
     });
 });
 
-export { Ex01, Ex02, Ex03, Ex04, Ex05, Ex06, Ex07, Ex08, Ex09, Ex10, Ex11, Ex12, Ex13 };
+export { Ex01, Ex02, Ex03, Ex04, Ex05, Ex06, Ex07, Ex08, Ex10, Ex11, Ex12, Ex13 };
